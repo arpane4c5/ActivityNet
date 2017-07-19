@@ -1,0 +1,14 @@
+net: "/home/arpan/VisionWorkspace/ActivityNet/ActivityNet-master/caffe_models/optical_flow_alexnet_mirror.prototxt"
+test_iter: 2000
+test_interval: 1000
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 25000	# To change
+display: 100
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 25000		# To change
+snapshot_prefix: "/home/arpan/VisionWorkspace/ActivityNet/ActivityNet-master/caffe_models/snapshots/OF_alexnet_mirror_snap"
+solver_mode: GPU
